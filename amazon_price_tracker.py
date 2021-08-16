@@ -19,8 +19,8 @@ def check_price():
 def send_email(msg):
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("rajabhips24@gmail.com","Sambalpur@123")
-    s.sendmail("rajabhips24@gmail.com","ritulagna123@gmail.com",msg)
+    s.login("sender-email","password")
+    s.sendmail("sender_email","reciever_email",msg)
     s.quit()
 
 def price_decrease_check(price_list):
